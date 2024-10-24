@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f9;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  /* Добавляем фон */
+  background-image: url("background.jpg"); /* Путь к вашему фоновому изображению */
+  background-size: cover; /* Изображение будет растянуто по всей странице */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Избегаем повторений фона */
+}
+
+#draggable {
+  background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый фон */
+  backdrop-filter: blur(10px); /* Размытие фона за контейнером */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  position: absolute; /* Нужно для перемещения */
+  cursor: move; /* Указатель мыши в виде значка перемещения */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
